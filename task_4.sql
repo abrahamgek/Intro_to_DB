@@ -2,7 +2,7 @@ USE alx_book_store;
 
 SELECT 
     COLUMN_NAME, 
-    DATA_TYPE, 
+    COLUMN_TYPE, 
     IS_NULLABLE, 
     COLUMN_DEFAULT, 
     COLUMN_KEY, 
@@ -10,5 +10,5 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS 
 WHERE 
-    TABLE_NAME = 'books' 
+    TABLE_NAME = 'Books' 
     AND TABLE_SCHEMA = 'alx_book_store';
